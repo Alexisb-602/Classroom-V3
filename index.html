@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>about:blank</title>
+    <style>
+        body { margin: 0; background: white; overflow: hidden; height: 100vh; cursor: default; }
+        input { position: absolute; opacity: 0; width: 100%; height: 100%; border: none; outline: none; cursor: default; }
+    </style>
+</head>
+<body>
+    <input type="password" id="pass" autofocus>
+    <script>
+        document.getElementById('pass').addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                if (this.value === '5667') {
+                    window.location.href = "hub.html";
+                } else {
+                    this.value = '';
+                }
+            }
+        });
+    </script>
+</body>
+</html>
